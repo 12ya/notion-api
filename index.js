@@ -15,6 +15,7 @@ app.get('/', async (req, res) => {
     const response = await notion.databases.query({
         database_id: 'c633a3f5-f8f2-4b35-bfcf-822a36c6a7c0',
     });
+    console.log(JSON.stringify(response));
     res.json(response);
 });
 
